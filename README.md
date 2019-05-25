@@ -1,6 +1,4 @@
-# MegaAmp2Pro
-Mega Amp 2.0 Pro
-
+# Mega Amp 2.0 Pro
 Original design by Ace and Villahed94
 
 What makes the Mega Amp 2.0 different from the original design?
