@@ -23,3 +23,5 @@ All explanation and installation are here:http://www.sega-16.com/forum/showthrea
 Boards can be ordered on OSHPark https://oshpark.com/shared_projects/HAlIFjbQ
 
 https://youtu.be/V17gc4aD0Z8
+
+![schematic](https://github.com/TRP-Retromods/MegaAmp2Pro/blob/master/Scematics.png)
