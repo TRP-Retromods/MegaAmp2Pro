@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -183,8 +183,8 @@
 <wire x1="27.305" y1="21.717" x2="27.305" y2="18.923" width="0.254" layer="25"/>
 <wire x1="18.669" y1="7.366" x2="18.669" y2="10.033" width="0.254" layer="25"/>
 <wire x1="18.669" y1="10.668" x2="18.669" y2="13.335" width="0.254" layer="25"/>
-<wire x1="18.542" y1="33.147" x2="18.542" y2="35.941" width="0.254" layer="25"/>
-<wire x1="18.542" y1="36.449" x2="18.542" y2="39.497" width="0.254" layer="25"/>
+<wire x1="18.542" y1="33.528" x2="18.542" y2="35.687" width="0.254" layer="25"/>
+<wire x1="18.542" y1="36.703" x2="18.542" y2="39.116" width="0.254" layer="25"/>
 <wire x1="36.83" y1="30.226" x2="39.624" y2="30.226" width="0.254" layer="25"/>
 <wire x1="21.971" y1="18.161" x2="24.765" y2="18.161" width="0.254" layer="25"/>
 <wire x1="28.448" y1="28.575" x2="28.448" y2="31.369" width="0.254" layer="25"/>
@@ -285,7 +285,7 @@ into a VA0 to a VA 1.8 Model 2. Simply bridge J1 &amp; J2
 <rectangle x1="21.717" y1="24.638" x2="25.019" y2="26.67" layer="21"/>
 <rectangle x1="21.717" y1="20.193" x2="25.019" y2="22.352" layer="21"/>
 <rectangle x1="28.575" y1="15.621" x2="30.607" y2="18.669" layer="21"/>
-<rectangle x1="19.304" y1="7.366" x2="21.336" y2="10.287" layer="21"/>
+<rectangle x1="19.304" y1="7.747" x2="21.336" y2="10.668" layer="21"/>
 <rectangle x1="19.304" y1="36.322" x2="21.336" y2="39.37" layer="21"/>
 <rectangle x1="28.575" y1="28.321" x2="30.607" y2="31.369" layer="21"/>
 <wire x1="39.624" y1="16.764" x2="36.83" y2="16.764" width="0.254" layer="25"/>
@@ -3629,7 +3629,7 @@ http://www.bccomponents.com/</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="oshpark-2layer *">
+<designrules name="oshpark-2layer">
 <description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
 &lt;p&gt;
 Please make sure your boards conform to these design rules.
@@ -3691,7 +3691,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="mlMaxStopFrame" value="2.5mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="15mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -3704,6 +3704,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3869,11 +3872,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="18.737" y="14.474" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="180pF" x="28.448" y="26.67" smashed="yes" rot="R90">
-<attribute name="NAME" x="27.813" y="24.384" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="27.813" y="24.257" size="0.8128" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="30.353" y="26.035" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C8" library="resistor" package="C0603" value="180pF" x="28.448" y="20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="27.813" y="21.844" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="27.813" y="22.098" size="0.8128" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="26.543" y="20.955" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C9" library="resistor" package="153CLV-0405" value="10uF" x="14.224" y="38.354" smashed="yes" rot="R90">
@@ -3945,11 +3948,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="18.415" y="35.433" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R4" library="resistor" package="R0603" value="75" x="20.32" y="12.192" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.431" y="13.716" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="19.685" y="11.684" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="22.225" y="11.557" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R5" library="resistor" package="R0603" value="2.2k" x="23.368" y="23.495" smashed="yes" rot="R180">
-<attribute name="NAME" x="21.209" y="24.13" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="25.527" y="22.86" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="24.003" y="25.4" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R6" library="resistor" package="R0603" value="220k" x="23.368" y="27.813" smashed="yes" rot="R180">
@@ -3957,7 +3960,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="24.003" y="29.718" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R7" library="resistor" package="R0603" value="200k" x="23.368" y="25.654" smashed="yes" rot="R180">
-<attribute name="NAME" x="21.209" y="26.289" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="20.828" y="25.019" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="24.003" y="27.559" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R8" library="resistor" package="R0603" value="220k" x="23.368" y="19.177" smashed="yes" rot="R180">
@@ -3965,7 +3968,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="24.003" y="21.082" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R9" library="resistor" package="R0603" value="200k" x="23.368" y="21.336" smashed="yes" rot="R180">
-<attribute name="NAME" x="21.209" y="21.971" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="NAME" x="21.717" y="21.971" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="24.003" y="23.241" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R10" library="resistor" package="R0603" value="240k" x="26.162" y="26.67" smashed="yes" rot="R270">
@@ -3989,7 +3992,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="25.781" y="43.18" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R15" library="resistor" package="R0603" value="12k" x="17.653" y="9.144" smashed="yes" rot="R90">
-<attribute name="NAME" x="17.018" y="10.541" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="16.51" y="6.731" size="0.8128" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="19.558" y="8.509" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R16" library="resistor" package="R0603" value="1k" x="18.288" y="5.588" smashed="yes" rot="R180">
@@ -4013,7 +4016,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="15.621" y="35.433" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R21" library="resistor" package="R0603" value="11k" x="17.653" y="12.192" smashed="yes" rot="R270">
-<attribute name="NAME" x="18.669" y="10.668" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="NAME" x="16.129" y="13.208" size="0.8128" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="15.748" y="12.827" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R22" library="resistor" package="R0603" value="20k" x="39.751" y="11.684" smashed="yes">
@@ -4049,16 +4052,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="31.496" y="29.21" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="2.2k" x="20.32" y="37.846" smashed="yes" rot="R270">
-<attribute name="NAME" x="19.685" y="36.957" size="0.8128" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="19.304" y="39.37" size="0.8128" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="18.415" y="38.481" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R31" library="resistor" package="R0603" value="2.2k" x="20.32" y="9.144" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.336" y="7.62" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="NAME" x="19.304" y="6.731" size="0.8128" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="18.415" y="9.779" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="Q1" library="TRP_Custom" package="SOT23" value="2SC945SOT23" x="21.717" y="41.275" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.082" y="42.926" size="0.8128" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="18.542" y="43.18" size="1.27" layer="27" rot="R270"/>
+<element name="Q1" library="TRP_Custom" package="SOT23" value="2SC945SOT23" x="21.717" y="41.656" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.082" y="43.307" size="0.8128" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="18.542" y="43.561" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="Q2" library="TRP_Custom" package="SOT23" value="2SC945SOT23" x="21.59" y="4.699" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.622" y="4.064" size="0.8128" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -4420,14 +4423,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$16">
 <contactref element="Q1" pad="1"/>
 <contactref element="R13" pad="1"/>
-<wire x1="20.556" y1="42.291" x2="20.617" y2="42.225" width="0.254" layer="1"/>
-<wire x1="20.617" y1="42.225" x2="19.204" y2="42.225" width="0.254" layer="1"/>
-<wire x1="19.204" y1="42.225" x2="19.138" y2="42.545" width="0.254" layer="1"/>
+<wire x1="20.556" y1="42.672" x2="20.617" y2="42.606" width="0.254" layer="1"/>
+<wire x1="20.617" y1="42.606" x2="19.199" y2="42.606" width="0.254" layer="1"/>
+<wire x1="19.199" y1="42.606" x2="19.138" y2="42.545" width="0.254" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="Q1" pad="3"/>
 <contactref element="R14" pad="2"/>
-<wire x1="24.296" y1="41.275" x2="22.817" y2="41.275" width="0.254" layer="1"/>
+<wire x1="23.915" y1="41.656" x2="22.817" y2="41.656" width="0.254" layer="1"/>
+<wire x1="24.296" y1="41.275" x2="23.915" y2="41.656" width="0.254" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="Q1" pad="2"/>
@@ -4442,10 +4446,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="11.684" y1="40.132" x2="12.7" y2="40.132" width="0.254" layer="16"/>
 <contactref element="SJ2" pad="3"/>
 <wire x1="12.7" y1="40.132" x2="15.748" y2="40.132" width="0.254" layer="16"/>
-<wire x1="15.748" y1="40.132" x2="20.424" y2="40.132" width="0.254" layer="1"/>
-<wire x1="20.424" y1="40.132" x2="20.617" y2="40.325" width="0.254" layer="1"/>
+<wire x1="15.748" y1="40.132" x2="17.376" y2="40.132" width="0.254" layer="1"/>
+<wire x1="17.376" y1="40.132" x2="17.95" y2="40.706" width="0.254" layer="1"/>
 <via x="12.7" y="40.132" extent="1-16" drill="0.35"/>
 <wire x1="12.7" y1="40.132" x2="12.7" y2="42.545" width="0.254" layer="1"/>
+<wire x1="17.95" y1="40.706" x2="20.617" y2="40.706" width="0.254" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="C9" pad="-"/>
@@ -4614,17 +4619,18 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="R23" pad="1"/>
 <contactref element="C19" pad="2"/>
 <contactref element="TDA1308" pad="7"/>
-<wire x1="39.116" y1="26.5684" x2="39.116" y2="31.789" width="0.254" layer="1"/>
 <contactref element="R34" pad="1"/>
 <contactref element="R36" pad="1"/>
-<wire x1="39.077" y1="31.242" x2="39.077" y2="33.274" width="0.254" layer="1"/>
-<wire x1="39.077" y1="33.274" x2="39.077" y2="35.384" width="0.254" layer="1"/>
 <wire x1="39.077" y1="35.384" x2="38.901" y2="35.306" width="0.254" layer="1"/>
 <wire x1="38.901" y1="35.306" x2="38.901" y2="35.472" width="0.254" layer="1"/>
 <wire x1="38.901" y1="35.472" x2="39.116" y2="35.814" width="0.254" layer="1"/>
 <wire x1="39.116" y1="35.814" x2="39.116" y2="37.377" width="0.254" layer="1"/>
 <wire x1="39.116" y1="37.377" x2="38.901" y2="37.338" width="0.254" layer="1"/>
-<wire x1="39.116" y1="31.789" x2="39.077" y2="31.242" width="0" layer="19" extent="1-1"/>
+<wire x1="39.116" y1="26.5684" x2="39.116" y2="31.203" width="0.254" layer="1"/>
+<wire x1="39.116" y1="31.203" x2="39.077" y2="31.242" width="0.254" layer="1"/>
+<wire x1="39.077" y1="31.242" x2="39.077" y2="33.274" width="0.254" layer="1"/>
+<wire x1="38.901" y1="35.306" x2="39.077" y2="35.13" width="0.254" layer="1"/>
+<wire x1="39.077" y1="35.13" x2="39.077" y2="33.274" width="0.254" layer="1"/>
 </signal>
 <signal name="N$45">
 <contactref element="C18" pad="2"/>
@@ -4747,6 +4753,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="36.83" y1="31.496" x2="37.377" y2="31.242" width="0.254" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
