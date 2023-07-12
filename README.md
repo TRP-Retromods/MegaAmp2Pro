@@ -18,7 +18,9 @@ To sum up the Mega Amp 2.0:
 -Mega Amp 2.0 Pro can add Sega CD pass-through to the Genesis Model 1
 
 
-All explanation and installation are here:http://www.sega-16.com/forum/showthread.php?31989-Take-your-Genesis-audio-to-the-next-level-The-Mega-Amp-2-0-is-here!
+Sega-16 forums are downs, so I compile all explanation and installation in this doc: https://github.com/TRP-Retromods/MegaAmp2Pro/blob/master/MEGAAMP_2_DOC+INSTALL_V1.pdf
+Quick Guide to help soldering the components on the PCB: https://github.com/TRP-Retromods/MegaAmp2Pro/blob/master/MEGAMP_2_PRO_QUICK_GUIDE_V3.pdf
+
 
 Boards can be ordered on OSHPark https://oshpark.com/shared_projects/v1SMwG5q
 
