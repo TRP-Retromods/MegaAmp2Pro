@@ -19,6 +19,7 @@ To sum up the Mega Amp 2.0:
 
 
 Sega-16 forums are downs, so I compile all explanation and installation in this doc: https://github.com/TRP-Retromods/MegaAmp2Pro/blob/master/MEGAAMP_2_DOC+INSTALL_V1.pdf
+
 Quick Guide to help soldering the components on the PCB: https://github.com/TRP-Retromods/MegaAmp2Pro/blob/master/MEGAMP_2_PRO_QUICK_GUIDE_V3.pdf
 
 
